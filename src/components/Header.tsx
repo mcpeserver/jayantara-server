@@ -36,12 +36,12 @@ export default function Header({ onShowToast, devConfig }: HeaderProps) {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300">
       {/* Top Header Watermark (Promosi RAN DEV - Sangat Jelas & Mencolok) */}
-      <div className="w-full bg-gradient-to-r from-brand-brown via-brand-gold to-brand-brown-light text-brand-charcoal py-1.5 px-4 text-center text-xs font-semibold tracking-wide shadow-md flex justify-center items-center gap-2">
-        <span className="animate-pulse bg-brand-charcoal text-white text-[9px] px-1.5 py-0.5 rounded uppercase font-black">
+      <div className="w-full bg-gradient-to-r from-brand-brown via-brand-gold to-brand-brown-light text-brand-charcoal py-2 px-4 text-center text-xs font-semibold tracking-wide shadow-md flex justify-center items-center gap-2 flex-wrap">
+        <span className="animate-pulse bg-brand-charcoal text-white text-[9px] px-1.5 py-0.5 rounded uppercase font-black shrink-0">
           Promo
         </span>
-        <span className="text-brand-charcoal">
-          Developed by <strong className="font-extrabold">{devConfig.name}</strong> (<a href={devConfig.website.portfolio} target="_blank" rel="noopener noreferrer" className="underline font-bold hover:text-white transition-colors">Portfolio</a> | WhatsApp: <a href={`https://wa.me/${devConfig.contact.whatsapp}`} target="_blank" rel="noopener noreferrer" className="underline font-bold hover:text-white transition-colors">{devConfig.contact.whatsapp}</a>) — Join <strong className="font-extrabold">{devConfig.community.name}</strong> (<a href={devConfig.community.website} target="_blank" rel="noopener noreferrer" className="underline font-bold hover:text-white transition-colors">Website/Komunitas</a> | <a href={devConfig.community.discord} target="_blank" rel="noopener noreferrer" className="underline font-bold hover:text-white transition-colors">Discord</a>) — {siteConfig.developer.pitch}
+        <span className="text-brand-charcoal leading-relaxed text-center">
+          Developed by <strong className="font-extrabold">{devConfig.name}</strong> (WhatsApp: <a href={`https://wa.me/${devConfig.contact.whatsapp}`} target="_blank" rel="noopener noreferrer" className="underline font-bold hover:text-white transition-colors">{devConfig.contact.whatsapp}</a>) — Hubungi kami untuk pembuatan website profesional! Hubungi via <a href={devConfig.community.website} target="_blank" rel="noopener noreferrer" className="underline font-bold hover:text-white transition-colors">Website Komunitas</a> atau gabung <a href={devConfig.community.discord} target="_blank" rel="noopener noreferrer" className="underline font-bold hover:text-white transition-colors">Discord Developer</a>.
         </span>
       </div>
 

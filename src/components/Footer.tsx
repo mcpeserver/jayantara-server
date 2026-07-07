@@ -16,18 +16,6 @@ export default function Footer({ devConfig }: FooterProps) {
 
   return (
     <footer className="bg-brand-charcoal border-t border-brand-brown/10 relative overflow-hidden">
-      {/* Scroll to Top floating anchor button inside footer bar */}
-      <div className="absolute right-8 -top-6">
-        <button
-          onClick={scrollToTop}
-          aria-label="Back to top"
-          id="scroll_to_top_btn"
-          className="p-3 rounded-full bg-brand-brown hover:bg-brand-gold text-white hover:text-brand-charcoal transition-all duration-300 shadow-xl border border-brand-gold/30 hover:scale-110 active:scale-95 cursor-pointer"
-        >
-          <ArrowUp className="w-5 h-5 animate-pulse" />
-        </button>
-      </div>
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-gray-800/60">
           
@@ -84,8 +72,6 @@ export default function Footer({ devConfig }: FooterProps) {
               </span>
             </div>
             <div className="flex items-center gap-3 text-[10px] text-gray-500">
-              <a href={devConfig.website.portfolio} target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold hover:underline transition-colors">Portfolio</a>
-              <span>•</span>
               <a href={devConfig.community.website} target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold hover:underline transition-colors">{devConfig.community.name}</a>
               <span>•</span>
               <a href={devConfig.community.discord} target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold hover:underline transition-colors">Discord Dev</a>
